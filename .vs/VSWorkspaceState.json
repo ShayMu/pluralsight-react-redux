@@ -3,10 +3,13 @@
     "",
     "\\src",
     "\\src\\actions",
+    "\\src\\api",
     "\\src\\components",
+    "\\src\\components\\course",
     "\\src\\reducers",
+    "\\src\\store",
     "\\tools"
   ],
-  "SelectedNode": "\\src\\actions\\actionsTypes.js",
+  "SelectedNode": "\\src\\components\\course\\CourseList.js",
   "PreviewInSolutionExplorer": false
 }
