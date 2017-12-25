@@ -19,6 +19,12 @@ class ManageCoursePage extends React.Component {
     this.saveCourse = this.saveCourse.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.props.course.id !== nextProps.course.id) {
+      this.setState({ course: Object.assign({}, nextProps.course) });
+    }
+  }
+
   updateCourseState(event) {
     const field = event.target.name;
     let course = Object.assign({}, this.state.course);
@@ -61,12 +67,9 @@ function mapStateToProps(state, ownProps) {
 
   let courseId = ownProps.params.id;
 
-  let course;
+  let course = { id: '', watchHref: '', title: '', authorId: '', length: '', category: '' };;
 
-  if (courseId == null) {
-    course = { id: '', watchHref: '', title: '', authorId: '', length: '', category: '' };
-  }
-  else {
+  if (courseId && state.courses.length > 0) {
     course = (state.courses.filter(item => item.id === courseId)[0]) || course;
   }
 
