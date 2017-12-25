@@ -1,15 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\actions",
-    "\\src\\api",
-    "\\src\\components",
-    "\\src\\components\\course",
-    "\\src\\reducers",
-    "\\src\\store",
-    "\\tools"
+    "\\src"
   ],
-  "SelectedNode": "\\src\\components\\course\\CourseList.js",
+  "SelectedNode": "\\src\\components",
   "PreviewInSolutionExplorer": false
 }
