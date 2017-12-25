@@ -67,7 +67,7 @@ function mapStateToProps(state, ownProps) {
 
   let courseId = ownProps.params.id;
 
-  let course = { id: '', watchHref: '', title: '', authorId: '', length: '', category: '' };;
+  let course = { id: '', watchHref: '', title: '', authorId: '', length: '', category: '' };
 
   if (courseId && state.courses.length > 0) {
     course = (state.courses.filter(item => item.id === courseId)[0]) || course;
